@@ -29,7 +29,7 @@ main{
     background-position: bottom center;
     background-size: 170% 120%;
     padding: 2.5rem 1rem 1rem;
-    height: 65vh;
+    height: 60vh;
     position: relative;
     color: white;
     border-radius: 5px;
@@ -56,7 +56,7 @@ main{
     z-index: 9;
     opacity: .5;
     border-radius: 5px;
-    background: rgba(19, 119, 219, 0.87);
+    background: rgba(19, 119, 219, 0.88);
 }
 
 .text-box {
@@ -111,7 +111,7 @@ main{
     letter-spacing: .9px;
 }
 .timer div p {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 600;
     margin-bottom: rem;
 }
@@ -140,15 +140,19 @@ main{
     font-size: 14px;
 }
 
-#mc_embed_signup .mc-field-group input {
+#mc_embed_signup .mc-field-group input:not(.button){
     width: 98%;
     width: 100%;
     padding: 0 .5rem;
     height: 42.59px;
     height: 42.59px ;
-    border: 1px solid rgba(0, 0, 0, .0);
-    box-shadow: 1px 1px 2px rgba(19, 119, 219, 0.87),
-    -1px -1px 2px rgba(19, 119, 219, 0.87);
+    border: 1px solid rgba(19, 119, 219, 0.77);
+    -webkit-box-shadow: 1px 1px 2px rgba(19, 119, 219, 0.77),
+    -1px -1px 2px rgba(19, 119, 219, 0.77);
+    -moz-box-shadow: 1px 1px 2px rgba(19, 119, 219, 0.77),
+    -1px -1px 2px rgba(19, 119, 219, 0.77);
+    box-shadow: 1px 1px 2px rgba(19, 119, 219, 0.77),
+    -1px -1px 2px rgba(19, 119, 219, 0.77);
 }
 
 element.style {
@@ -165,19 +169,26 @@ element.style {
     height: 42.59px ;
 }
 #mc_embed_signup input:focus {
-    border: none;
+    border: 1px solid rgba(19, 119, 219, 0.77);
     outline: none;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(19, 119, 219, 0.77),
+    inset -1px -1px 2px rgba(19, 119, 219, 0.77);
+    -moz-box-shadow: inset 1px 1px 2px rgba(19, 119, 219, 0.77),
+    inset -1px -1px 2px rgba(19, 119, 219, 0.77);
+    box-shadow: inset 1px 1px 2px rgba(19, 119, 219, 0.77),
+    inset -1px -1px 2px rgba(19, 119, 219, 0.77);
 }
 
 #mc_embed_signup .button {
     width: 97%;
     margin: 1.1rem auto 0;
-    background-color: #1976D3;
+    background-color: rgb(25, 118, 211);
     color: white;
     padding: 0;
     height: 42.59px ;
     font-size: 1.1rem;
     letter-spacing: 1px;
+    border-radius: 3px;
 }
 /*tablet screen*/
 @media only screen and (min-width: 560px) and (max-width: 960px) {
@@ -187,6 +198,7 @@ element.style {
     }
     .top-div {
         padding: 2.5rem 1.5rem 1rem;
+        height: 65vh;
     }
     .texts h2 {
         font-size: .9rem;
