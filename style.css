@@ -179,7 +179,7 @@ element.style {
     inset -1px -1px 2px rgba(19, 119, 219, 0.77);
 }
 
-#mc_embed_signup .button {
+#mc_embed_signup .btn-box .button {
     width: 97%;
     margin: 1.1rem auto 0;
     background-color: rgb(25, 118, 211);
@@ -189,6 +189,8 @@ element.style {
     font-size: 1.1rem;
     letter-spacing: 1px;
     border-radius: 3px;
+    border: 0;
+    box-shadow: none;
 }
 /*tablet screen*/
 @media only screen and (min-width: 560px) and (max-width: 960px) {
