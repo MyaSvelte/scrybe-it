@@ -1,7 +1,7 @@
 var countDownDate = new Date("july 18, 2022 00:00:00").getTime();
 let x;
 
-x = setInterval(function(){
+x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
 
@@ -10,6 +10,29 @@ x = setInterval(function(){
     let hours = Math.floor(distance% (1000*60*60*24) / (1000 * 60 * 60));
     let minutes = Math.floor(distance% (1000 * 60 * 60) / (1000 * 60));
     let seconds = Math.floor(distance% (1000 * 60) / 1000);
+ 
+    /* To add zero to the front of the number if its less than 10*/
+
+    /*for weeks */
+    if (weeks < 10) {
+        weeks = `0${weeks}`
+    }
+     /*for days */
+     if (days < 10) {
+        days = `0${days}`
+    }
+     /*for weeks */
+     if (hours < 10) {
+        hours = `0${hours}`
+    }
+     /*for weeks */
+     if (minutes < 10) {
+        minutes = `0${minutes}`
+    }
+     /*for weeks */
+     if (seconds < 10) {
+        seconds = `0${seconds}`
+    }
 
     document.getElementById("weeks").innerHTML = weeks;
     document.getElementById("days").innerHTML = days;

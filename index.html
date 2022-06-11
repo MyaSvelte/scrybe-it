@@ -10,81 +10,65 @@
 </head>
 <body>
     <main>
-            <div class="desk-image-container">
-                    
-                    <div> <img src="images/desk.jpg" class="desk"> </div>
+        <div class="top-div"> 
+            <div class="text-box">
+                <div class="logo">
+                    <img src="images/figlogo.png" alt="" class="logo-img" >
+                </div>
+                <div class="texts">
+                    <h2>STAY TUNED</h2>
+                    <h1>WE WILL LAUNCH SOON</h1>
+                    <h4>Our website is under construction.</h4>
+                    <h4> we'll be here soon with our new awesome website.</h4>
+                </div>       
+                <!--Launch timer-->
+                <!-- the countdown timer -->
+                <div class="timer">
+                        <!-- weeks -->
+                        <div class="timer-div">
+                            <p id="weeks">00</p>
+                            <span>Weeks</span>
+                        </div>
+                        <!-- days -->
+                        <div>
+                            <p id="days">00</p>
+                            <span>Days</span>
+                        </div>
+                        <!-- hours -->
+                        <div>
+                            <p id="hours">00</p>
+                            <span>Hours</span>
+                        </div>
+                        <!-- minutes -->
+                        <div>
+                            <p id="minutes">00</p>
+                            <span>Minutes</span>
+                        </div>
+                        <!-- seconds -->
+                        <div>
+                            <p id="seconds">00</p>
+                            <span>Seconds</span>
+                        </div>
+                </div> 
+            </div>
+        </div>
 
-                   <div class="overlay-1"><img src="images/PATTERN OVERLAY FOR LOGO BACKGROUND.jfif" alt=""></div>
-
-                    <div class="overlay-2"></div>
-
-                    <div class="content">
-
-                        <p>STAY TUNED</p>
-                        <h1>WE WILL LAUNCH SOON</h1>
-                        <h2>Our website is under construction. we'll be here soon with our new awesome website.</h2>
-                        
-                        <!--Launch timer-->
-                        
-                            <!-- the countdown timer -->
-                            <div class="timer">
-                                <!-- weeks -->
-                                <div>
-                                    <p id="weeks">00</p>
-                                    <span>Weeks</span>
-                                </div>
-                                <!-- days -->
-                                <div>
-                                    <p id="days">00</p>
-                                    <span>Days</span>
-                                </div>
-                                <!-- hours -->
-                                <div>
-                                    <p id="hours">00</p>
-                                    <span>Hours</span>
-                                </div>
-                                <!-- minutes -->
-                                <div>
-                                    <p id="minutes">00</p>
-                                    <span>Minutes</span>
-                                </div>
-                                <!-- seconds -->
-                                <div>
-                                    <p id="seconds">00</p>
-                                    <span>Seconds</span>
-                                </div>
-                            </div> 
-                        
-                    </div>
-
-            </div>  
-
-              
-
-            
-    
-    
         <!--newsletter segment-->
-        <aside>
-            <!-- Begin Mailchimp Signup Form -->
-       
-        <div id="mc_embed_signup">
+        <!-- Begin Mailchimp Signup Form -->
+        <aside class="bot-div">
+            <h2>Subscribe to our Newsletter</h2>
+        <div id="mc_embed_signup" class="form-border" >
         <form action="https://gmail.us11.list-manage.com/subscribe/post?u=8eea29633247aad93863a8b4b&amp;id=952c68edd3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
-            <h2>Subscribe to our Newsletter</h2>
-        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+        <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
         <div class="mc-field-group">
-            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-        </label>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            <input type="text" value="" name="FNAME" class="" placeholder="Name" id="mce-FNAME" required>
         </div>
         <div class="mc-field-group">
-            <label for="mce-FNAME">Name </label>
-            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+            <input type="email" value="" name="EMAIL" class="required email" placeholder="Email" id="mce-EMAIL" required>
         </div>
-        <div class="mc-field-group size1of2">
-            <label for="mce-PHONE">Phone Number </label>
-            <input type="text" name="PHONE" class="" value="" id="mce-PHONE">
+        <div class="mc-field-group">
+            <input type="text" name="PHONE" class="" value="" placeholder="Phone number" id="mce-PHONE" required>
         </div>
             <div id="mce-responses" class="clear foot">
                 <div class="response" id="mce-error-response" style="display:none"></div>
@@ -92,22 +76,23 @@
             </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8eea29633247aad93863a8b4b_952c68edd3" tabindex="-1" value=""></div>
                 <div class="optionalParent">
-                    <div class="clear foot">
-                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                        <p class="brandingLogo"><a href="http://eepurl.com/h3-sIX" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                    <div class="">
+                        <input type="submit" value="Notify Me" name="subscribe" id="mc-embedded-subscribe" class="button submit-button">
                     </div>
                 </div>
             </div>
         </form>
-        </div>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-        <!--End mc_embed_signup-->
-            
+        </div>   
         </aside>
-                
-            </main>
-            <script src="./script.js"></script>
+         <!--End mc_embed_signup-->  
         
     </main>
+
+
+
+
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <script src="./script.js"></script>
 </body>
 </html>

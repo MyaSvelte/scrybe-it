@@ -1,75 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+ 
+ 
 *{
-    margin: o;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 100%;
 }
-
 html, body{
     height: 100%;
+    font-family: 'Inter', sans-serif;
 }
-
-#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; margin: 0 auto;
-    width: 70%;}
-
+body {
+    
+}
 
 main{
     display: flex;
-    width: 1200px;
-    margin: 0 auto ;
-    min-height: 400px;
-    padding: 0;
     width: 100%;
-   display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-
-.timer{
-    display: flex;
-    font-size: 1.2rem;
-}
-
-.timer div{
-    flex-basis: 100px;
-}
-
-.timer div p{
-    font-size: 60px;
-    margin-bottom: -14px;
-}
-
-
-.desk-image-container{
+.top-div {
+    background: url('images/desk.jpg') no-repeat;
+    background-position: bottom center;
+    background-size: 170% 120%;
+    padding: 2.5rem 1rem 1rem;
+    height: 65vh;
     position: relative;
-    height: 70%;
+    color: white;
+    border-radius: 5px;
+}
+.top-div::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    opacity: .1;
+    border-radius: 5px;
+    background: url('images/overlay.jfif') center/cover no-repeat;
+}
+.top-div::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    z-index: 9;
+    opacity: .5;
+    border-radius: 5px;
+    background: rgba(19, 119, 219, 0.87);
 }
 
-.overlay-1{
-    position: absolute;
-    opacity: 20%;
-    top:0px;
-    left:0px;
-    bottom:0px;
-    right:0px;
+.text-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    
+}
+.logo {
+    width: 50px;
+}
+.logo-img {
+    width: 100%;
+    margin: ;
+    padding: 0;
 }
 
-.overlay-2{
-    position: absolute;
-    opacity: 90%;
-    background-color: hsla(210, 79%, 46%, 0.67);
-    top:0px;
-    left:0px;
-    bottom:0px;
-    right:0px;
+.texts h2 {
+    font-size: .8rem;
+    font-weight: 500;
+    margin: .8rem 0;
+}
+.texts h1 {
+    font-size: 25px;
+    margin: .5rem 0;
+    font-weight: 700;
+    letter-spacing: .6px;
+    
+}
+.texts h4 {
+    font-size: .9rem;
+    margin: .3rem 0;
+    font-weight: 400;
 }
 
-.content{
-    position: absolute;
-    margin: 2em;
-    padding: 50px;
-    opacity: 90%;
-    top:0px;
-    left:0px;
-    bottom:0px;
-    right:0px;   
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    padding: 1rem 2rem ;
+    margin-top: 1rem;
 }
+.timer div{
+    text-align: center;
+    margin: 0 7px;
+}
+.timer div span {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .9px;
+}
+.timer div p {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: rem;
+}
+
+/*newsletter*/
+.bot-div {
+    margin-top: 1.2rem;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bot-div h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, .8);
+}
+.form-border {
+    border: 1px solid rgba(0, 0, 0, .7);
+    padding: 1rem 0rem;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+#mc_embed_signup .mc-field-group input {
+    width: 98%;
+    width: 100%;
+    padding: 0 .5rem;
+    height: 42.59px;
+    height: 42.59px ;
+    border: 1px solid rgba(0, 0, 0, .0);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .3),
+    -1px -1px 2px rgba(0, 0, 0, .3);
+}
+
+#mc_embed_signup input {
+    
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 42.59px ;
+}
+
+#mc_embed_signup .button {
+    width: 97%;
+    margin: 1.1rem auto 0;
+    background-color: #1976D3;
+    color: white;
+    padding: 0;
+    height: 42.59px ;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+/*tablet screen*/
+@media only screen and (min-width: 560px) and (max-width: 960px) {
+    .timer {
+        width: 70%;
+        padding: 1rem 0rem ;
+    }
+    .top-div {
+        padding: 2.5rem 1.5rem 1rem;
+    }
+    .texts h2 {
+        font-size: .9rem;
+    }
+    .texts h1 {
+        font-size: 37px;
+        letter-spacing: .8px; 
+    }
+    .texts h4 {
+        font-size: 1rem;
+        margin: .2rem 0;
+        font-weight: 400;
+    }
+    .timer div span {
+        font-size: 13px;
+    }
+    .timer div p {
+        font-size: 40px;
+    }
+    
+    /*newsletter*/
+    .bot-div {
+        flex-direction: row;
+    }
+    .bot-div h2 {
+        width: 55%;
+        font-size: 28px;
+        padding: 2rem;
+    }
+    .bot-div .form-border {
+        border: 1px solid rgba(0, 0, 0, .7);
+        padding: 1rem 0rem;
+        width: 100%;
+    }
+    
+}
+@media only screen and (min-width: 961px){
+    main{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        
+    }
+    .top-div {
+        height: 100%;
+        width: 70%;
+        padding: 3.5rem 3rem 1rem;
+    }
+    .bot-div {
+        height: 100%;
+        width: 50%;
+    }
+    .texts h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 5rem;
+    }
+    .texts h1 {
+        font-size: 47px;
+    }
+    .texts h4 {
+        font-size: 1.1rem;
+        margin: .3rem 0;
+        font-weight: 400;
+    }
+    .timer {
+        width: 90%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .timer div span {
+        font-size: 16px;
+    }
+    .timer div p {
+        font-size: 50px;
+    }
+     /*newsletter*/
+     .bot-div {
+         padding: 0 1.1rem;
+     }
+     .bot-div h2 {
+         font-size: 1.7rem;
+     }
+    .bot-div .form-border {
+        border: 1px solid rgba(0, 0, 0, .7);
+        padding: 1rem 0rem;
+        width: 100%;
+        height: 55vh;
+    }
+}
+
