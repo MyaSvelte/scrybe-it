@@ -1,13 +1,75 @@
-.container{
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+html, body{
+    height: 100%;
+}
+
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; margin: 0 auto;
+    width: 70%;}
+
+
+main{
     display: flex;
-    margin: .25em auto;
-    text-align: center;
-    justify-content: center;
-    background-color: #f0f8ff;
-    color: black;
-    font-size: 10em;
-    border: 5px solid red;
+    width: 1200px;
+    margin: 0 auto ;
+    min-height: 400px;
+    padding: 0;
+    width: 100%;
+   display: block;
+}
 
 
+.timer{
+    display: flex;
+    font-size: 1.2rem;
+}
 
+.timer div{
+    flex-basis: 100px;
+}
+
+.timer div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+
+.desk-image-container{
+    position: relative;
+    height: 70%;
+}
+
+.overlay-1{
+    position: absolute;
+    opacity: 20%;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+}
+
+.overlay-2{
+    position: absolute;
+    opacity: 90%;
+    background-color: hsla(210, 79%, 46%, 0.67);
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+}
+
+.content{
+    position: absolute;
+    margin: 2em;
+    padding: 50px;
+    opacity: 90%;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;   
 }
